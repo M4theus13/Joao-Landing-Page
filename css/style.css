@@ -255,6 +255,9 @@ a {
         margin: 30px 0;
     }
 
+    .card {
+        width: 220px;
+    }
 
     #title-two {
         font-size: 27px;
