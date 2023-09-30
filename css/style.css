@@ -342,6 +342,7 @@ a {
     .box-text p {
         width: 250px;
         padding-top: 20px;
+        line-height: 20px;
     }
     
     .titles {
