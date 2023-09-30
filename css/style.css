@@ -76,8 +76,12 @@ a {
     margin: 35px 0;
 }
 
-#title-one, #title-two {
+#title-one {
     font-size: 64px;
+}
+
+#title-two {
+    font-size: 33px; 
 }
 
 #title-one {
@@ -85,6 +89,97 @@ a {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: monospace;
+}
+
+#title-two {
+    font-family: monospace;
+    border-right: 4px solid;
+    width: 0ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: frase1 5s steps(23), pisca 0.5s infinite step-end alternate;
+}
+
+@keyframes frase1 {
+    0% {
+        width: 0;
+    }
+    
+    20% {
+        width: 20ch;
+    }
+
+    80% {
+        width: 20ch;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+
+@keyframes frase2 {
+    0% {
+        width: 0;
+    }
+    
+    20% {
+        width: 23ch;
+    }
+
+    80% {
+        width: 23ch;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+
+@keyframes frase3 {
+    0% {
+        width: 0;
+    }
+    
+    20% {
+        width: 27ch;
+    }
+
+    80% {
+        width: 27ch;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+
+@keyframes frase4 {
+    0% {
+        width: 0;
+    }
+    
+    20% {
+        width: 12ch;
+    }
+
+    80% {
+        width: 12ch;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes pisca {
+    50% {
+        border-color: transparent;
+    }
 }
 
 .list {
@@ -182,9 +277,12 @@ a {
         gap: 12%;
     }
 
-    #title-one, #title-two {
-        font-size: 53px;
+    #title-one {
         width: max-content;
+    }
+
+    #title-one{
+        font-size: 53px;
     }
 
     .titles {
@@ -210,8 +308,8 @@ a {
 }
 
 @media (max-width:600px) {
-    #title-one, #title-two {
-        font-size: 43px;
+    #title-two {
+        font-size: 27px;
     }
 
     .box-links {
@@ -228,10 +326,10 @@ a {
 }
 
 @media (max-width:480px) {
-    #title-one, #title-two {
-        font-size: 33px;
+    #title-one {
+        font-size: 36px;
     }
-    
+
     .list {
         width: min-content;
         grid-template-columns: 1fr;
@@ -261,7 +359,7 @@ a {
     }
 
     #title-two {
-        font-size: 27px;
+        font-size: 17px;
     }
 
     .icon {
