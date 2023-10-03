@@ -251,6 +251,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 10px;
 }
 
 .footer p {
@@ -391,5 +392,6 @@ a {
 
     .footer p {
         font-size: 12px;
+        margin: 10px 0;
     }
 }
