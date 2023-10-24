@@ -6,7 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Joaoz</title>
   <link rel="stylesheet" href="./css/style.css">
+  
+  <link rel="stylesheet" href="./css/carrosselIndVisual.css">
+  <link rel="stylesheet" href="./css/carrosselSocialMedia.css">
+  <link rel="stylesheet" href="./css/carrosselEdiVideo.css">
+  <link rel="stylesheet" href="./css/carrosselPages.css">
   <link rel="stylesheet" href="./css/carrossel.css">
+
   <link href="https://fonts.cdnfonts.com/css/gotham-6" rel="stylesheet">
   <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
   <meta name="description" content="Designer, Social Media, Editor de vídeos e outros">
@@ -62,19 +68,83 @@
       </div>
     </div>
   </main>
-  
+
   <div class="box-carrossel">
-    
-    <div class="carrossel">
-      <img class="img-carrossel item-1" src="./assets/imgSlides/carr1_img1.jpg" data-index="1" alt="img1">
-      <img class="img-carrossel item-2" src="./assets/imgSlides/carr1_img2.jpg" data-index="1" alt="img2">
-      <img class="img-carrossel item-3" src="./assets/imgSlides/carr1_img3.jpg" data-index="1" alt="img3">
+
+    <div class="carrossel-controls">
+      <button class="carrossel-previous">Previous</button>
+      <button class="carrossel-next">Next</button>
     </div>
-    <div class="carrosel-controls">
-      <button class="previous">Previous</button>
-      <button class="next">Next</button>
+
+    <div class="carrosseis">
+
+      <div class="box-carrossel-pages bloco carrossel-1">
+        
+        <div class="carrossel-pages">
+          <img class="img-carrossel-pages pages-item-2" src="./assets/landingPage/img1.jpg" alt="img1">
+          <img class="img-carrossel-pages pages-item-1" src="./assets/landingPage/img2.jpg" alt="img2">
+        </div>
+
+        <div class="carrosel-controls-pages">
+          <button class="pages-previous">Previous</button>
+          <button class="pages-next">Next</button>
+        </div>
+
+      </div>
+
+      <div class="box-carrossel-ediVideo bloco carrossel-2">
+        
+        <div class="carrossel-ediVideo">
+          <video controls class="vid-carrossel-ediVideo ediVideo-item-1" src="./assets/editVideos/vid1.mp4"></video>
+          <video controls class="vid-carrossel-ediVideo ediVideo-item-2" src="./assets/editVideos/vid2.mp4"></video>
+          <video controls class="vid-carrossel-ediVideo ediVideo-item-3" src="./assets/editVideos/vid3.mp4"></video>
+        </div>
+
+        <div class="carrosel-controls-ediVideo">
+          <button class="ediVideo-previous">Previous</button>
+          <button class="ediVideo-next">Next</button>
+        </div>
+
+      </div>
+
+      
+      <div class="box-carrossel-social-media bloco carrossel-3">
+        
+        <div class="carrossel-social-media">
+          <img class="img-carrossel-social-media social-media-item-1" src="./assets/socialMedia/img1.jpg" alt="img2">
+          <img class="img-carrossel-social-media social-media-item-2" src="./assets/socialMedia/img2.jpg" alt="img1">
+          <img class="img-carrossel-social-media social-media-item-3" src="./assets/socialMedia/img3.jpg" alt="img3">
+        </div>
+
+        <div class="carrosel-controls-social-media">
+          <button class="social-media-previous">Previous</button>
+          <button class="social-media-next">Next</button>
+        </div>
+
+      </div>
+
+      <div class="box-carrossel-identidade-visual bloco carrossel-4">
+        
+        <div class="carrossel-identidade-visual">
+          <img class="img-carrossel item-1" src="./assets/identidadeVisual/img2.jpg" alt="img2">
+          <img class="img-carrossel item-2" src="./assets/identidadeVisual/img1.jpg" alt="img1">
+          <img class="img-carrossel item-3" src="./assets/identidadeVisual/img3.jpg" alt="img3">
+        </div>
+
+        <div class="carrosel-controls-identidade-visual">
+          <button class="indVisual-previous">Previous</button>
+          <button class="indVisual-next">Next</button>
+        </div>
+
+      </div>
+
     </div>
+
+
   </div>
+
+
+  
 
   <footer class="footer">
     <p>&copy; Copyright <span class="year">2023</span> Joaoz.design. Todos os direitos reservados.</p>
@@ -82,4 +152,8 @@
 </body>
 <script src="./js/script.js"></script>
 <script src="./js/carrossel.js"></script>
+<script src="./js/carrosselIndVisual.js"></script>
+<script src="./js/carrosselSocialMedia.js"></script>i
+<script src="./js/carroselEdiVideo.js"></script>
+<script src="./js/carrosselPages.js"></script>
 </html>

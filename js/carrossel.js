@@ -1,7 +1,7 @@
 const galleryContainer = document.querySelector('.box-carrossel')
-const galleryControlsContainer = document.querySelector('.carrosel-controls')
+const galleryControlsContainer = document.querySelector('.carrossel-controls')
 const galleryControl = ['previous', 'next']
-const galleryItems = document.querySelectorAll('.img-carrossel')
+const galleryItems = document.querySelectorAll('.bloco')
 
 class Carrossel {
     constructor(container, items, controls) {
@@ -12,18 +12,19 @@ class Carrossel {
 
     updateCarrossel() {
         this.carouselArray.forEach(el => {
-            el.classList.remove('item-1')
-            el.classList.remove('item-2')
-            el.classList.remove('item-3')
+            el.classList.remove('carrossel-1')
+            el.classList.remove('carrossel-2')
+            el.classList.remove('carrossel-3')
+            el.classList.remove('carrossel-4')
         })
         
-        this.carouselArray.slice(0, 3).forEach((el, i) => {
-            el.classList.add(`item-${i+1}`)
+        this.carouselArray.slice(0, 4).forEach((el, i) => {
+            el.classList.add(`carrossel-${i+1}`)
         })
     }
 
     setCurrentState(direction) {
-        if (direction.className == `previous`) {
+        if (direction.className == `carrossel-previous`) {
             this.carouselArray.unshift(this.carouselArray.pop())
         } else {
             this.carouselArray.push(this.carouselArray.shift())
@@ -33,7 +34,7 @@ class Carrossel {
 
     setControls() {
         this.carouselControls.forEach(control => {
-            document.querySelector(`.${control}`).innerHTML = control
+            document.querySelector(`.carrossel-${control}`).innerHTML = control
         })
     }
 
@@ -48,6 +49,5 @@ class Carrossel {
     }
 }
 
-const testeCarr = new Carrossel(galleryContainer, galleryItems, galleryControlsContainer)
-testeCarr.galleryControlrgalleryItems
-testeCarr.useControls()
+const carrosel = new Carrossel(galleryContainer, galleryItems, galleryControlsContainer)
+carrosel.useControls()
