@@ -26,6 +26,7 @@
     width: 340px;
     opacity: 0;
     filter: blur(2px) brightness(0.6);
+    
 }
 
 .carrossel-1 {
@@ -54,8 +55,9 @@
 
 
 .carrossel-controls button {
-    color: green;
-    background-color: transparent;
+    color: #fff;
+    background-color: gray;
+
     border: 0;
     cursor: pointer;
     font-size: 30px;

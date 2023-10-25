@@ -49,5 +49,32 @@ class Carrossel {
     }
 }
 
+const palavras = ['Edição de Video', 'Social Media', 'Identidade Visual', 'Landing Page'];
+        let indiceAtual = 0;
+
+        const palavraElemento = document.querySelector('.carrossel-name');
+        const botaoAnterior = document.querySelector('.carrossel-previous');
+        const botaoProximo = document.querySelector('.carrossel-next');
+
+        // Função para mostrar a palavra atual no elemento
+        function mostrarPalavra() {
+            palavraElemento.textContent = palavras[indiceAtual];
+        }
+
+        // Adiciona um ouvinte de evento para o botão 'Next'
+        botaoProximo.addEventListener('click', function() {
+            indiceAtual = (indiceAtual + 1) % palavras.length;
+            mostrarPalavra();
+        });
+
+        // Adiciona um ouvinte de evento para o botão 'Previous'
+        botaoAnterior.addEventListener('click', function() {
+            indiceAtual = (indiceAtual - 1 + palavras.length) % palavras.length;
+            mostrarPalavra();
+        });
+
+        // Inicializa o elemento com a primeira palavra
+        mostrarPalavra();
+
 const carrosel = new Carrossel(galleryContainer, galleryItems, galleryControlsContainer)
 carrosel.useControls()
