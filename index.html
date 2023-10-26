@@ -30,12 +30,28 @@
 
 <body>
   <header class="bar-social-media">
-    <p>Me siga nas <span>redes sociais:</span></p>
+    <a href="">
+      <img src="./assets/logo.svg" alt="logo JA" id="logo-ja">
+    </a>
+    <div class="box-text-header">
+      <a href="#section-carrossel">
+        <p>Portifólio</p>
+      </a>
+      <a href="">
+        <p>Serviços</p>
+      </a>
+      <a href="">
+        <p>Sobre Mim</p>
+      </a>
+    </div>
     <a href="https://www.linkedin.com/in/azvdj/" target="_blank">
-      <img src="./assets/linkedin-icon.svg" alt="linkedin-icon" class="icon">
+      <img src="./assets/linkedin.svg" alt="linkedin-icon" class="icon">
+    </a>
+    <a href="https://www.instagram.com/joaoz.design/" target="_blank">
+      <img src="./assets/instagram.svg" alt="instagram-icon" class="icon">
     </a>
     <a href="https://www.tiktok.com/@joaoz.design" target="_blank">
-      <img src="./assets/tiktok-icon.svg" alt="tiktok-icon" class="icon">
+      <img src="./assets/tiktok.svg" alt="tiktok-icon" class="icon">
     </a>
   </header>
   <main>
@@ -57,128 +73,124 @@
             <button id="button-request" onclick="redirect()" >Solicite um orçamento</button>
         </div>
       </div>
-
-      <div class="box-links">
-        <a href="https://www.behance.net/joaoazevedodesign" target="_blank">
-          <img src="./assets/card-um.jpg" alt="card-um" class="card">
-        </a>
-        <a href="https://www.instagram.com/joaoz.design/" target="_blank">
-          <img src="./assets/card-dois.jpg" alt="card-dois" class="card">
-        </a>
+      <div class="box-img-perfil">
+        <img src="./assets/perfil.png" alt="">
       </div>
-    </div>
+
+     
   </main>
+  <section id="section-carrossel">
 
-  <div class="box-carrossel">
+    <div class="box-carrossel">
 
-    <div class="carrossel-controls">
-      <button class="carrossel-previous">Anterior</button>
-      <div class="box-carrossel-name">
-        <p  class="carrossel-name" >Edição de video</p>
+      <div class="carrossel-controls">
+        <button class="carrossel-previous">Anterior</button>
+        <div class="box-carrossel-name">
+          <p  class="carrossel-name" >Edição de video</p>
+        </div>
+        <button class="carrossel-next">Próximo</button>
       </div>
-      <button class="carrossel-next">Próximo</button>
+
+      <div class="carrosseis">
+
+        <div class="box-carrossel-pages bloco carrossel-1">
+          
+          <div class="carrossel-pages">
+            <img class="img-carrossel-pages pages-item-1" src="./assets/landingPage/img2.jpg" alt="img2">
+            <img class="img-carrossel-pages pages-item-2" src="./assets/landingPage/img1.jpg" alt="img1">
+          </div>
+
+          <div class="carrosel-controls-pages">
+            <button class="pages-previous">
+              <img class="seta-img" src="./assets/setas/esquerdo.png" alt="">
+            </button>
+            <button class="pages-next">
+              <img class="seta-img" src="./assets/setas/direito.png" alt="">
+            </button>
+          </div>
+
+        </div>
+
+        <div class="box-carrossel-ediVideo bloco carrossel-2">
+          
+          <div class="carrossel-ediVideo">
+            <video controls class="vid-carrossel-ediVideo ediVideo-item-1" src="./assets/editVideos/vid1.mp4"></video>
+            <video controls class="vid-carrossel-ediVideo ediVideo-item-2" src="./assets/editVideos/vid2.mp4" poster="./assets/tumbVid2.png"></video>
+            <video controls class="vid-carrossel-ediVideo ediVideo-item-3" src="./assets/editVideos/vid3.mp4" poster="./assets/tumbVid3.png"></video>
+          </div>
+
+          <div class="carrosel-controls-ediVideo">
+            <button class="ediVideo-previous">
+              <img class="seta-img" src="./assets/setas/esquerdo.png" alt="">
+
+            </button>
+            <button class="ediVideo-next">
+              <img class="seta-img" src="./assets/setas/direito.png" alt="">
+
+            </button>
+          </div>
+
+        </div>
+
+        
+        <div class="box-carrossel-social-media bloco carrossel-3">
+          
+          <div class="carrossel-social-media">
+            <img class="img-carrossel-social-media social-media-item-1" src="./assets/socialMedia/img1.jpg" alt="img2">
+            <img class="img-carrossel-social-media social-media-item-2" src="./assets/socialMedia/img2.jpg" alt="img1">
+            <img class="img-carrossel-social-media social-media-item-3" src="./assets/socialMedia/img3.jpg" alt="img3">
+          </div>
+
+          <div class="carrosel-controls-social-media">
+            <button class="social-media-previous">
+              <img class="seta-img" src="./assets/setas/esquerdo.png" alt="">
+
+            </button>
+            <button class="social-media-next">
+              <img class="seta-img" src="./assets/setas/direito.png" alt="">
+
+            </button>
+          </div>
+
+        </div>
+
+        <div class="box-carrossel-identidade-visual bloco carrossel-4">
+          
+          <div class="carrossel-identidade-visual">
+            <img class="img-carrossel item-1" src="./assets/identidadeVisual/img2.jpg" alt="img2">
+            <img class="img-carrossel item-2" src="./assets/identidadeVisual/img1.jpg" alt="img1">
+            <img class="img-carrossel item-3" src="./assets/identidadeVisual/img3.jpg" alt="img3">
+          </div>
+
+          <div class="carrosel-controls-identidade-visual">
+            <button class="indVisual-previous">
+              <img class="seta-img" src="./assets/setas/esquerdo.png" alt="">
+
+            </button>
+            <button class="indVisual-next">
+              <img class="seta-img" src="./assets/setas/direito.png" alt="">
+
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
     </div>
-
-    <div class="carrosseis">
-
-      <div class="box-carrossel-pages bloco carrossel-1">
-        
-        <div class="carrossel-pages">
-          <img class="img-carrossel-pages pages-item-1" src="./assets/landingPage/img2.jpg" alt="img2">
-          <img class="img-carrossel-pages pages-item-2" src="./assets/landingPage/img1.jpg" alt="img1">
-        </div>
-
-        <div class="carrosel-controls-pages">
-          <button class="pages-previous">
-            <img class="seta-img" src="./assets/setas/esquerdo.png" alt="">
-          </button>
-          <button class="pages-next">
-            <img class="seta-img" src="./assets/setas/direito.png" alt="">
-          </button>
-        </div>
-
-      </div>
-
-      <div class="box-carrossel-ediVideo bloco carrossel-2">
-        
-        <div class="carrossel-ediVideo">
-          <video controls class="vid-carrossel-ediVideo ediVideo-item-1" src="./assets/editVideos/vid1.mp4" poster="https://t.ctcdn.com.br/lSNpQuVMr69_o174i29o1eH1fLA=/950x534/smart/i301828.jpeg"></video>
-          <video controls class="vid-carrossel-ediVideo ediVideo-item-2" src="./assets/editVideos/vid2.mp4"></video>
-          <video controls class="vid-carrossel-ediVideo ediVideo-item-3" src="./assets/editVideos/vid3.mp4"></video>
-        </div>
-
-        <div class="carrosel-controls-ediVideo">
-          <button class="ediVideo-previous">
-            <img class="seta-img" src="./assets/setas/esquerdo.png" alt="">
-
-          </button>
-          <button class="ediVideo-next">
-            <img class="seta-img" src="./assets/setas/direito.png" alt="">
-
-          </button>
-        </div>
-
-      </div>
-
-      
-      <div class="box-carrossel-social-media bloco carrossel-3">
-        
-        <div class="carrossel-social-media">
-          <img class="img-carrossel-social-media social-media-item-1" src="./assets/socialMedia/img1.jpg" alt="img2">
-          <img class="img-carrossel-social-media social-media-item-2" src="./assets/socialMedia/img2.jpg" alt="img1">
-          <img class="img-carrossel-social-media social-media-item-3" src="./assets/socialMedia/img3.jpg" alt="img3">
-        </div>
-
-        <div class="carrosel-controls-social-media">
-          <button class="social-media-previous">
-            <img class="seta-img" src="./assets/setas/esquerdo.png" alt="">
-
-          </button>
-          <button class="social-media-next">
-            <img class="seta-img" src="./assets/setas/direito.png" alt="">
-
-          </button>
-        </div>
-
-      </div>
-
-      <div class="box-carrossel-identidade-visual bloco carrossel-4">
-        
-        <div class="carrossel-identidade-visual">
-          <img class="img-carrossel item-1" src="./assets/identidadeVisual/img2.jpg" alt="img2">
-          <img class="img-carrossel item-2" src="./assets/identidadeVisual/img1.jpg" alt="img1">
-          <img class="img-carrossel item-3" src="./assets/identidadeVisual/img3.jpg" alt="img3">
-        </div>
-
-        <div class="carrosel-controls-identidade-visual">
-          <button class="indVisual-previous">
-            <img class="seta-img" src="./assets/setas/esquerdo.png" alt="">
-
-          </button>
-          <button class="indVisual-next">
-            <img class="seta-img" src="./assets/setas/direito.png" alt="">
-
-          </button>
-        </div>
-
-      </div>
-
-    </div>
-
-
-  </div>
-
-
+  </section>
   
 
   <footer class="footer">
     <p>&copy; Copyright <span class="year">2023</span> Joaoz.design. Todos os direitos reservados.</p>
   </footer>
+
+
 </body>
 <script src="./js/script.js"></script>
 <script src="./js/carrossel.js"></script>
 <script src="./js/carrosselIndVisual.js"></script>
-<script src="./js/carrosselSocialMedia.js"></script>i
+<script src="./js/carrosselSocialMedia.js"></script>
 <script src="./js/carroselEdiVideo.js"></script>
 <script src="./js/carrosselPages.js"></script>
 </html>

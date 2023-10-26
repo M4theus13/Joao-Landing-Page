@@ -45,7 +45,7 @@
 }
 
 .carrossel-1 {
-    left: 0%;
+    left: 40%;
     transform: translateX(-50%);
 }
 
@@ -63,7 +63,7 @@
 
 
 .carrossel-4 {
-    left: 100%;
+    left: 60%;
     transform: translateX(-50%);
 }
 
