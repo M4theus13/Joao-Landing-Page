@@ -16,7 +16,7 @@ class CarrosselPages {
             el.classList.remove('pages-item-2')
         })
         
-        this.carouselArray.slice(0, 3).forEach((el, i) => {
+        this.carouselArray.slice(0, 2).forEach((el, i) => {
             el.classList.add(`pages-item-${i+1}`)
         })
     }

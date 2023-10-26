@@ -1,12 +1,27 @@
 .box-carrossel {
     width: 100%;
+}
 
+.box-carrossel-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 100px;
+    margin: 0 20px;
+    background: linear-gradient(180deg, #00C9FF 0%, #3661FF 45.02%);
+    border-radius: 20px;
+}
+
+.carrossel-name {
+    font-size: 30px;
+    text-align: center;
 }
 
 .carrosseis {
     align-items: center;
     display: flex;
-    height: 400px;
+    height: 500px;
     margin: 0 auto;
     max-width: 1000px;
     position: relative;
@@ -35,7 +50,6 @@
 }
 
 .carrossel-2 {
-    box-shadow: -2px 5px 33px 6px rgba(0, 0, 0, .35);
     opacity: 1;
     left: 50%;
     transform: translateX(-50%);
@@ -56,18 +70,39 @@
 
 .carrossel-controls button {
     color: #fff;
-    background-color: gray;
-
+    background: linear-gradient(180deg, #00C9FF 0%, #3661FF 45.02%);
     border: 0;
     cursor: pointer;
-    font-size: 30px;
-    margin: 0 50px;
+    font-size: 20px;
     padding: 0 12px;
+    border-radius: 20px;
     text-transform: capitalize;
+    height: 70px;
+    transition: .4s;
+}
+
+.carrossel-controls button:hover {
+    color: #000;
+    box-shadow: 0px 0px 40px rgb(0, 32, 138);
+    transform: scale(1.1);
+}
+
+.seta-img {
+    width: 50px;
+    transition: .4s;
+}
+
+.seta-img:hover {
+    transform: scale(1.1);
 }
 
 .carrossel-controls {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
+    align-items: center;
+}
+
+.carrosel-controls-pages, .carrosel-controls-ediVideo, .carrosel-controls-social-media , .carrosel-controls-identidade-visual {
+    margin-top: 40px;
 }
