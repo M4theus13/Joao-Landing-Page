@@ -1,0 +1,37 @@
+.section-servicos {
+    height: 100vh;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.box-servicos-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#logo-servicos {
+    height: 50px;
+    filter: grayscale(1) brightness(0%) invert(1);
+    border-right: #3363FF solid 2px;
+    padding-right: 50px;
+}
+
+.box-servicos-text h3 {
+    font-size: 64px;
+}
+
+.box-servicos-text h3 span {
+    background: linear-gradient(92deg, #00CAFF 48.64%, #3363FF 99.46%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* .box-cards-servicos {
+
+}
+
+.card-servicos {
+} */
