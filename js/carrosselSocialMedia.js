@@ -15,9 +15,10 @@ class CarrosselSocialMedia {
             el.classList.remove('social-media-item-1')
             el.classList.remove('social-media-item-2')
             el.classList.remove('social-media-item-3')
+            el.classList.remove('social-media-item-4')
         })
         
-        this.carouselArray.slice(0, 3).forEach((el, i) => {
+        this.carouselArray.slice(0, 4).forEach((el, i) => {
             el.classList.add(`social-media-item-${i+1}`)
         })
     }

@@ -58,7 +58,13 @@ const palavras = ['Edição de Video', 'Social Media', 'Identidade Visual', 'Lan
 
         // Função para mostrar a palavra atual no elemento
         function mostrarPalavra() {
+            botaoAnterior.textContent = palavras[indiceAtual - 1];
             palavraElemento.textContent = palavras[indiceAtual];
+            botaoProximo.textContent = palavras[indiceAtual + 1];
+
+            if (botaoAnterior.textContent === '') {
+                botaoAnterior.textContent == 'Landing Page'
+            }
         }
 
         // Adiciona um ouvinte de evento para o botão 'Next'

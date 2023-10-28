@@ -7,6 +7,9 @@
     font-family: 'Gotham', sans-serif;
     color: #fff;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background-image: url('../assets/background.jpg');

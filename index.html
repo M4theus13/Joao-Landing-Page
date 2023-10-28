@@ -85,14 +85,40 @@
     <section id="portifolio" class="section">
 
       <div class="box-carrossel">
-
+<!-- 
         <div class="carrossel-controls">
-          <button class="carrossel-previous">Anterior</button>
+          <button class="carrossel-previous">Landing Page</button>
           <div class="box-carrossel-name">
             <p class="carrossel-name">Edição de video</p>
           </div>
-          <button class="carrossel-next">Próximo</button>
+          <button class="carrossel-next">Edição de Video</button>
+        </div> -->
+
+        <!-- <div class="controles-slide">
+          <button>Edição de Video</button>
+          <button>Social Media</button>
+          <button>Indentidade Visual</button>
+          <button>Landing Page</button>
+        </div> -->
+
+        <div>
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
         </div>
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+      </div>
+        <div class="manual-navigation">
+          <label for="radio1" class="manual-btn">a</label>
+          <label for="radio2" class="manual-btn">b</label>
+          <label for="radio3" class="manual-btn">c</label>
+          <label for="radio4" class="manual-btn">d</label>
+      </div>
 
         <div class="carrosseis">
 
@@ -119,9 +145,9 @@
             <div class="carrossel-ediVideo">
               <video controls class="vid-carrossel-ediVideo ediVideo-item-1" src="./assets/editVideos/vid1.mp4"></video>
               <video controls class="vid-carrossel-ediVideo ediVideo-item-2" src="./assets/editVideos/vid2.mp4"
-                poster="./assets/tumbVid2.png"></video>
+                poster="./assets/editVideos/tumbVid2.png"></video>
               <video controls class="vid-carrossel-ediVideo ediVideo-item-3" src="./assets/editVideos/vid3.mp4"
-                poster="./assets/tumbVid3.png"></video>
+                poster="./assets/editVideos/tumbVid3.png"></video>
             </div>
 
             <div class="carrosel-controls-ediVideo">
@@ -147,6 +173,8 @@
                 alt="img1">
               <img class="img-carrossel-social-media social-media-item-3" src="./assets/socialMedia/img3.jpg"
                 alt="img3">
+              <img class="img-carrossel-social-media social-media-item-4" src="./assets/socialMedia/img4.jpg"
+                alt="img4">
             </div>
 
             <div class="carrosel-controls-social-media">
@@ -194,9 +222,52 @@
         <h3>Meus <span>Serviços</span></h3>
       </div>
       <div class="box-cards-servicos">
-        <div class="card-servicos servicos-social-media"></div>
-        <div class="card-servicos servicos-landing-page"></div>
-        <div class="card-servicos servios-edicao-video"></div>
+        <div class="card-servicos servicos-social-media">
+          <div class="servicos-social-media-header">
+            <img src="./assets/card/arroba.svg" alt="">
+            <div>
+              <h4>Criativos para <span>Social Media</span></h4>
+              <span>(ou anúncios)</span>
+            </div>
+          </div>
+          <div class="card-servicos-border"></div>
+          <div class="servicos-social-media-text">
+            <div>
+              <span>Opção 1:</span>
+              <p class="card-servicos-text">Criativos para utilizar no Instagram, Facebook e etc.</p>
+            </div>
+            <div>
+              <span>Opção 2:</span>
+              <p class="card-servicos-text">Criativos para utilizar em campanhas de tráfego pago (anúncios)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-servicos servicos-landing-page">
+          <div class="servicos-landing-page-header">
+            <img src="./assets/card/landing-page.svg" alt="">
+            <h4>Landing Page</h4>
+          </div>
+          <div class="card-servicos-border"></div>
+          <div class="servicos-landing-page-text">
+            <p class="card-servicos-text">
+              Criação de uma Landing Page (ou página de captura) completa do zero, Design e funcionalidades, totalmente
+              responsiva para aparelhos móveis.
+            </p>
+          </div>
+        </div>
+        <div class="card-servicos servicos-edicao-video">
+          <div class="servicos-edicao-video-header">
+            <img src="./assets/card/camera.svg" alt="">
+            <h4>Edição de Vídeo</h4>
+          </div>
+          <div class="card-servicos-border"></div>
+          <div class="servicos-landing-page-text">
+            <p class="card-servicos-text">
+              Edição completa do seu vídeo para qualquer nicho e formato. Reels, Tiktok, Youtube ou Institucionais.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -206,7 +277,8 @@
           <h3>Conheça o <span>João Azevedo</span></h3>
           <p>
             Me chamo João Azevedo e tenho 21 anos. Sou um profissional apaixonado pelo mundo do design gráfico e edição
-            de vídeo. Desde os meus 14 anos, comecei a explorar as possibilidades do Photoshop, desenvolvendo habilidades
+            de vídeo. Desde os meus 14 anos, comecei a explorar as possibilidades do Photoshop, desenvolvendo
+            habilidades
             essenciais para minha carreira.
           </p>
           <p>

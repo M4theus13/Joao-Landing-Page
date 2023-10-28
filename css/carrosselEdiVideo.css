@@ -5,7 +5,7 @@
 .carrossel-ediVideo {
     align-items: center;
     display: flex;
-    height: 400px;
+    height: 600px;
     margin: 0 auto;
     max-width: 1000px;
     position: relative;
@@ -21,8 +21,12 @@
     background-size: contain;
 }
 
+.ediVideo-item-1, .ediVideo-item-2, .ediVideo-item-3 {
+    transition: .4s;
+}
+
 .ediVideo-item-1, .ediVideo-item-3 {
-    height: 340px;
+    height: 500px;
     opacity: .8;
     filter: blur(2px) brightness(0.6);
 }
@@ -38,7 +42,7 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
-    height: 400px;
+    height: 590px;
 }
 
 .ediVideo-item-3 {

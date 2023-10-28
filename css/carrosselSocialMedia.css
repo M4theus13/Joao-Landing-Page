@@ -6,7 +6,7 @@
 .carrossel-social-media {
     align-items: center;
     display: flex;
-    height: 400px;
+    height: 600px;
     margin: 0 auto;
     max-width: 1000px;
     position: relative;
@@ -17,13 +17,23 @@
     opacity: 0;
     position: absolute;
     transition: all .3s ease-in-out;
-    width: 400px;
+    width: 530px;
     z-index: 0;
     background-size: contain;
 }
 
+.social-media-item-1, .social-media-item-2, .social-media-item-3, .social-media-item-4 {
+    transition: .4s;
+}
+
 .social-media-item-1, .social-media-item-3 {
-    width: 340px;
+    width: 440px;
+    opacity: .8;
+    filter: blur(2px) brightness(0.6);
+}
+
+.social-media-item-4 {
+    width: 300px;
     opacity: .8;
     filter: blur(2px) brightness(0.6);
 }
@@ -43,6 +53,11 @@
 
 .social-media-item-3 {
     left: 100%;
+    transform: translateX(-50%);
+}
+
+.social-media-item-4 {
+    left: 50%;
     transform: translateX(-50%);
 }
 

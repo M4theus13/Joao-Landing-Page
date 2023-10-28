@@ -6,7 +6,7 @@
 .carrossel-identidade-visual {
     align-items: center;
     display: flex;
-    height: 400px;
+    height: 600px;
     margin: 0 auto;
     max-width: 1000px;
     position: relative;
@@ -17,13 +17,17 @@
     opacity: 0;
     position: absolute;
     transition: all .3s ease-in-out;
-    width: 400px;
+    width: 540px;
     z-index: 0;
     background-size: contain;
 }
 
+.item-1, .item-2, .item-3 {
+    transition: .4s;
+}
+
 .item-1, .item-3 {
-    width: 340px;
+    width: 440px;
     opacity: .8;
     filter: blur(2px) brightness(0.6);
 }
