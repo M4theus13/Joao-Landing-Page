@@ -1,3 +1,10 @@
+#portifolio {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .box-carrossel {
     width: 100%;
 }

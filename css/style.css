@@ -11,18 +11,22 @@
 body {
     background-image: url('../assets/background.jpg');
     background-size: cover;
-    height: calc(100vh + 100px);
+    background-position: 50% 50%;
 }
 
 main {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    width: 100%;
+    flex-direction: column;
 }
 
 a {
     text-decoration: none;
+}
+
+.section {
+    max-width: 2560px;
 }
 
 
@@ -39,6 +43,11 @@ a {
 
 #logo-ja {
     width: 50px;
+    transition: .4s;
+}
+
+#logo-ja:hover {
+    transform: scale(1.1);
 }
 
 .box-text-header {
@@ -70,6 +79,7 @@ a {
 
 .icon {
     width: 20px;
+    transition: .4s;
 }
 
 .icon:hover {
@@ -78,12 +88,16 @@ a {
 /*header*/
 
 /*container*/
+#section-first {
+    width: 100%;
+}
+
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 100px;
     height: calc(100vh - 70px);
+    position: relative;
     width: 70%;
 }
 
@@ -127,7 +141,7 @@ a {
 .box-img-perfil {
     position: absolute;
     z-index: -1;
-    right: 10%;
+    left: 50%;
 }
 
 @keyframes frase1 {
@@ -274,10 +288,13 @@ a {
     border-top: 1px solid #fff;
     height: 100px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin-top: 10px;
+}
+
+.footer div a {
+    padding: 4px;
 }
 
 .footer p {

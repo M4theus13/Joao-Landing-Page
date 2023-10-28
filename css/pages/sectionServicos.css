@@ -1,7 +1,11 @@
-.section-servicos {
+#servicos {
     height: 100vh;
     width: 100%;
-    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 90px;
 }
 
 .box-servicos-text {
@@ -12,14 +16,14 @@
 }
 
 #logo-servicos {
-    height: 50px;
+    height: 70px;
     filter: grayscale(1) brightness(0%) invert(1);
-    border-right: #3363FF solid 2px;
-    padding-right: 50px;
 }
 
 .box-servicos-text h3 {
     font-size: 64px;
+    border-left: #00CAFF solid 2px;
+    padding-left: 50px;
 }
 
 .box-servicos-text h3 span {
@@ -29,9 +33,16 @@
     -webkit-text-fill-color: transparent;
 }
 
-/* .box-cards-servicos {
-
+.box-cards-servicos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
 }
 
 .card-servicos {
-} */
+    width: 320px;
+    height: 520px;
+    border: #00CAFF 2px solid;
+    border-radius: 8px;
+}
