@@ -161,6 +161,10 @@ a {
     left: 50%;
 }
 
+.box-img-perfil img {
+    width: 800px;
+}
+
 @keyframes frase1 {
     0% {
         width: 0;
@@ -305,9 +309,10 @@ a {
     border-top: 1px solid #fff;
     height: 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-top: 10px;
+    gap: 10px;
 }
 
 .footer p {
@@ -320,9 +325,9 @@ a {
 }
 /*footer*/
 
-@media (max-width:1500px) {
+@media (max-width:1600px) {
     .box-img-perfil img {
-        width: 600px;
+        width: 550px;
     }
 }
 
@@ -423,13 +428,17 @@ a {
     }
 
     .box-text-header p {
-        padding: 0px 3px;
-        font-size: 14px;
+        display: none;
     }
 
     .box-img-perfil {
         left: -10%;
     }
+    
+    .footer {
+        gap: 0;
+    }
+
 }
 
 @media (max-width:480px) {
@@ -499,7 +508,7 @@ a {
 
     .box-img-perfil {
         top: 18%;
-        left: 37%;
+        left: 27%;
     }
     
     .box-img-perfil img {

@@ -62,16 +62,13 @@
     transform: translateX(-50%);
 }
 
-@media (max-width:1500px) {
+.social-media-item-2 {
+    width: 340px;
 
-    
-    .social-media-item-2 {
-        width: 400px;
-    }
+}
 
-    .social-media-item-1, .social-media-item-3 {
-        width: 300px;
-    }
+.social-media-item-1, .social-media-item-3 {
+    width: 280px;
 }
 
 @media (max-width:600px) {

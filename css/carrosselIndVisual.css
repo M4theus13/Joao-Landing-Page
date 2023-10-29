@@ -49,16 +49,15 @@
     transform: translateX(-50%);
 }
 
-@media (max-width:1500px) {
-
-    .item-2 {
-        width: 400px;
-    }
-
-    .item-1, .item-3 {
-        width: 300px;
-    }
+.item-2 {
+    width: 340px;
 }
+
+.item-1, .item-3 {
+    width: 280px;
+}
+
+
 
 @media (max-width:600px) {
     .item-1, .item-3 {

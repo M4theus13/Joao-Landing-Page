@@ -50,15 +50,14 @@
 } */
 
 
-@media (max-width:1500px) {
-    .pages-item-2 {
-        width: 400px;
-    }
-
-    .pages-item-1, .pages-item-3{
-        width: 300px;
-    }
+.pages-item-2 {
+    width: 340px;
 }
+
+.pages-item-1, .pages-item-3{
+    width: 280px;
+}
+
 
 @media (max-width:600px) {
     .pages-item-1, .pages-item-3 {
