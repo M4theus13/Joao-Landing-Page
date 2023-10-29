@@ -1,5 +1,4 @@
 #portifolio {
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,12 +86,12 @@
 
 #box-button-carrossel {
     z-index: 3;
-    position: absolute;
+    position: relative;
     width: 100%;
 }
 
 #button-carrossel-previous, #button-carrossel-next {
-    position: relative;
+    position: absolute;
 }
 
 #button-carrossel-previous {
@@ -100,7 +99,7 @@
 }
 
 #button-carrossel-next {
-    left: 89%;
+    right: 1%;
 }
 
 
@@ -129,10 +128,11 @@
 .controles-slide button {
     background-color: transparent;
     border-top: 0px;
-    border-radius: 0px;
+    border-right: 0px;
     border-left: 0px;
     font-size: 25px;
     transform: .4s;
+    outline: none;
 }
 
 
@@ -148,4 +148,28 @@
 
 .button-invisible {
     display: none;
+}
+
+@media (max-width:1500px) {
+    .carrosseis {
+        height: 600px;
+        width: 750px;
+    }
+
+    .ediVideo-item-2 {
+        height: 80%;
+    }
+
+    .ediVideo-item-1, .ediVideo-item-3 {
+        height: 60%;
+    }
+    
+
+    .bloco {
+        width: 280px;
+    }
+
+    .controles-slide {
+        margin: 0;
+    }
 }

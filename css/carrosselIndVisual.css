@@ -8,7 +8,6 @@
     display: flex;
     height: 600px;
     margin: 0 auto;
-    max-width: 1000px;
     position: relative;
 }
 
@@ -48,4 +47,15 @@
 .item-3 {
     left: 100%;
     transform: translateX(-50%);
+}
+
+@media (max-width:1500px) {
+
+    .item-2 {
+        width: 400px;
+    }
+
+    .item-1, .item-3 {
+        width: 300px;
+    }
 }
