@@ -49,18 +49,3 @@
     left: 100%;
     transform: translateX(-50%);
 }
-
-.carrosel-controls-identidade-visual button {
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
-    font-size: 30px;
-    margin: 0 50px;
-    padding: 0 12px;
-    text-transform: capitalize;
-}
-
-.carrosel-controls-identidade-visual {
-    display: flex;
-    justify-content: center;
-}

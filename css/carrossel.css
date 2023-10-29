@@ -30,14 +30,13 @@
     display: flex;
     height: 700px;
     margin: 0 auto;
-    width: 800px;
+    width: 1000px;
     overflow: hidden;
     position: relative;
 }
 
 .bloco {
     border-radius: 28px;
-    opacity: 0;
     position: absolute;
     transition: all .3s ease-in-out;
     width: 500px;
@@ -45,144 +44,108 @@
     background-size: contain;
 }
 
-.carrossel-1, .carrossel-3, .carrossel-4 {
-    width: 340px;
-    opacity: 0;
-    filter: blur(2px) brightness(0.6);
-}
-
 .carrossel-1, .carrossel-2, .carrossel-3, .carrossel-4 {
-    transition: .4s;
+    transition: 1.5s;
 }
 
 .carrossel-1 {
-    left: -30%;
-    transform: translateX(-50%) scale(0.5);
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .carrossel-2 {
     opacity: 1;
-    left: 50%;
+    left: 200%;
     transform: translateX(-50%);
     z-index: 2;
 }
 
 .carrossel-4 {
-    left: 50%;
+    left: 350%;
+    transform: translateX(-50%);
+}
+
+.carrossel-3 {
+    left: 250%;
     transform: translateX(-50%);
 }
 
 
-.carrossel-3 {
-    left: 130%;
-    transform: translateX(-50%) scale(0.5);
-}
-
-
-.carrossel-controls button {
-    color: #000;
-    background: linear-gradient(90deg, #00C9FF 0%, #3661FF 45.02%);
-    border: 0;
-    cursor: pointer;
-    font-size: 20px;
-    padding: 0 12px;
-    border-radius: 8px;
-    text-transform: capitalize;
-    height: 60px;
-    transition: .4s;
-}
-
-.carrossel-controls button:hover {
-    box-shadow: 0px 0px 40px rgb(0, 32, 138);
-    transform: scale(1.1);
-    color: #fff;
-}
-
 .seta-img {
     width: 50px;
+    height: 50px;
     transition: .4s;
+    background:linear-gradient(90deg, #00C9FF 0%, #3661FF 45.02%);
+    border-radius: 50%;
+    position: relative;
 }
 
 .seta-img:hover {
     transform: scale(1.1);
 }
 
-.carrossel-controls {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-    align-items: center;
+
+#box-button-carrossel {
+    z-index: 3;
+    position: absolute;
+    width: 100%;
 }
 
-.carrosel-controls-pages, .carrosel-controls-ediVideo, .carrosel-controls-social-media , .carrosel-controls-identidade-visual {
-    margin-top: 40px;
+#button-carrossel-previous, #button-carrossel-next {
+    position: relative;
+}
+
+#button-carrossel-previous {
+    left: 1%;
+}
+
+#button-carrossel-next {
+    left: 89%;
+}
+
+
+
+.carrosel-controls-identidade-visual button,
+.carrosel-controls-ediVideo button,
+.carrosel-controls-pages button,
+.carrosel-controls-social-media button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 30px;
+    text-transform: capitalize;
 }
 
 /* teste */
 
+.controles-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
 .controles-slide button {
     background-color: transparent;
-    border: none;
-    border: 2px solid;
+    border-top: 0px;
+    border-radius: 0px;
+    border-left: 0px;
+    font-size: 25px;
+    transform: .4s;
 }
 
-#radio1, #radio2, #radio3, #radio4 {
+
+.controles-slide button:active {
+    transform: scale(1.1);
+}
+
+.button-active {
+    transform: scale(1.1);
+    border-bottom: 2px solid #3661FF;
+    font-weight: 900;
+}
+
+.button-invisible {
     display: none;
-}
-
-.navigation-auto div {
-    border: 2px solid cadetblue;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.navigation-auto {
-    position: absolute;
-    width: 800px;
-    margin-top: 360px;
-    display: flex;
-    justify-content: center;
-}
-
-.navigation-auto div:not(:last-child) {
-    margin-right: 40px;
-}
-
-
-.manual-navigation {
-    position: absolute;
-    width: 800px;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
-}
-
-.manual-btn {
-    border: 2px solid white;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.radio1:checked ~ .navigation-auto .auto-btn1 {
-    background-color: white;
-}
-
-.radio2:checked ~ .navigation-auto .auto-btn2 {
-    background-color: white;
-}
-
-.radio3:checked ~ .navigation-auto .auto-btn3 {
-    background-color: white;
-}
-
-.radio4:checked ~ .navigation-auto .auto-btn4 {
-    background-color: white;
-}
-
-.manual-btn:hover {
-    background-color: white;
 }

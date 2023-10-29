@@ -1,86 +1,115 @@
-const galleryContainer = document.querySelector('.box-carrossel')
-const galleryControlsContainer = document.querySelector('.carrossel-controls')
-const galleryControl = ['previous', 'next']
-const galleryItems = document.querySelectorAll('.bloco')
 
-class Carrossel {
-    constructor(container, items, controls) {
-        this.carrouselContainer = container
-        this.carouselControls = controls
-        this.carouselArray = [...items]
-    }
 
-    updateCarrossel() {
-        this.carouselArray.forEach(el => {
-            el.classList.remove('carrossel-1')
-            el.classList.remove('carrossel-2')
-            el.classList.remove('carrossel-3')
-            el.classList.remove('carrossel-4')
-        })
-        
-        this.carouselArray.slice(0, 4).forEach((el, i) => {
-            el.classList.add(`carrossel-${i+1}`)
-        })
-    }
+const ediVideoCarrossel = document.querySelector('.carrossel-1')
+const socialMediaCarrossel = document.querySelector('.carrossel-2')
+const landingPageCarrossel = document.querySelector('.carrossel-3')
+const indVisualCarrossel = document.querySelector('.carrossel-4')
 
-    setCurrentState(direction) {
-        if (direction.className == `carrossel-previous`) {
-            this.carouselArray.unshift(this.carouselArray.pop())
-        } else {
-            this.carouselArray.push(this.carouselArray.shift())
-        }
-        this.updateCarrossel()
-    }
+const boxButton = document.getElementById('box-button-carrossel')
+const buttonAnterior = document.getElementById('button-carrossel-previous')
+const buttonNext = document.getElementById('button-carrossel-next')
 
-    setControls() {
-        this.carouselControls.forEach(control => {
-            document.querySelector(`.carrossel-${control}`).innerHTML = control
-        })
-    }
+ediVideoChecked()
 
-    useControls() {
-        const triggers = [...galleryControlsContainer.childNodes]
-        triggers.forEach(control => {
-            control.addEventListener('click', e => {
-                e.preventDefault()
-                this.setCurrentState(control)
-            })
-        })
-    }
+ function ediVideoChecked() {
+    ediVideoCarrossel.style.left = '50%'
+    ediVideoCarrossel.style.opacity = '1'
+
+    socialMediaCarrossel.style.left = '200%'
+    socialMediaCarrossel.style.opacity = '0'
+
+    landingPageCarrossel.style.left = '200%'
+    landingPageCarrossel.style.opacity = '0'
+
+    indVisualCarrossel.style.left = '200%'
+    indVisualCarrossel.style.opacity = '0'
+
+    boxButton.removeAttribute('class')
+    buttonAnterior.removeAttribute('class')
+    buttonNext.removeAttribute('class')
+
+    boxButton.setAttribute('class','carrosel-controls-ediVideo')
+    buttonAnterior.setAttribute('class','edi-video-previous')
+    buttonNext.setAttribute('class','edi-video-next')
+    
 }
 
-const palavras = ['Edição de Video', 'Social Media', 'Identidade Visual', 'Landing Page'];
-        let indiceAtual = 0;
+function socialMediaChecked() {
+    ediVideoCarrossel.style.left = '-100%'
+    ediVideoCarrossel.style.opacity = '0'
 
-        const palavraElemento = document.querySelector('.carrossel-name');
-        const botaoAnterior = document.querySelector('.carrossel-previous');
-        const botaoProximo = document.querySelector('.carrossel-next');
+    socialMediaCarrossel.style.left = '50%'
+    socialMediaCarrossel.style.opacity = '1'
 
-        // Função para mostrar a palavra atual no elemento
-        function mostrarPalavra() {
-            botaoAnterior.textContent = palavras[indiceAtual - 1];
-            palavraElemento.textContent = palavras[indiceAtual];
-            botaoProximo.textContent = palavras[indiceAtual + 1];
+    landingPageCarrossel.style.left = '200%'
+    landingPageCarrossel.style.opacity = '0'
 
-            if (botaoAnterior.textContent === '') {
-                botaoAnterior.textContent == 'Landing Page'
-            }
-        }
+    indVisualCarrossel.style.left = '200%'
+    indVisualCarrossel.style.opacity = '0'
 
-        // Adiciona um ouvinte de evento para o botão 'Next'
-        botaoProximo.addEventListener('click', function() {
-            indiceAtual = (indiceAtual + 1) % palavras.length;
-            mostrarPalavra();
+    boxButton.removeAttribute('class')
+    buttonAnterior.removeAttribute('class')
+    buttonNext.removeAttribute('class')
+
+    boxButton.setAttribute('class','carrosel-controls-social-media')
+    buttonAnterior.setAttribute('class','social-media-previous')
+    buttonNext.setAttribute('class','social-media-next')
+}
+
+function landingPageChecked() {
+    ediVideoCarrossel.style.left = '-100%'
+    ediVideoCarrossel.style.opacity = '0'
+    
+    socialMediaCarrossel.style.left = '-100%'
+    socialMediaCarrossel.style.opacity = '0'
+    
+    landingPageCarrossel.style.left = '50%'
+    landingPageCarrossel.style.opacity = '1'
+
+    indVisualCarrossel.style.left = '200%'
+    indVisualCarrossel.style.opacity = '0'
+
+    boxButton.removeAttribute('class')
+    buttonAnterior.removeAttribute('class')
+    buttonNext.removeAttribute('class')
+
+    boxButton.classList.add('carrosel-controls-pages')
+    buttonAnterior.classList.add('pages-previous')
+    buttonNext.classList.add('pages-next')
+}
+
+function indVisualChecked() {
+    ediVideoCarrossel.style.left = '-100%'
+    ediVideoCarrossel.style.opacity = '0'
+
+    socialMediaCarrossel.style.left = '-100%'
+    socialMediaCarrossel.style.opacity = '0'
+
+    landingPageCarrossel.style.left = '-100%'
+    landingPageCarrossel.style.opacity = '0'
+
+    indVisualCarrossel.style.left = '50%'
+    indVisualCarrossel.style.opacity = '1'
+
+    boxButton.removeAttribute('class')
+    buttonAnterior.removeAttribute('class')
+    buttonNext.removeAttribute('class')
+
+    boxButton.classList.add('carrosel-controls-identidade-visual')
+    buttonAnterior.classList.add('indVisual-previous')
+    buttonNext.classList.add('indVisual-next')
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    var buttons = document.querySelectorAll('.button');
+
+    buttons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            buttons.forEach(function(btn) {
+                btn.classList.remove('button-active');
+            });
+
+            button.classList.add('button-active');
         });
-
-        // Adiciona um ouvinte de evento para o botão 'Previous'
-        botaoAnterior.addEventListener('click', function() {
-            indiceAtual = (indiceAtual - 1 + palavras.length) % palavras.length;
-            mostrarPalavra();
-        });
-
-        // Inicializa o elemento com a primeira palavra
-        mostrarPalavra();
-
-const carrosel = new Carrossel(galleryContainer, galleryItems, galleryControlsContainer)
-carrosel.useControls()
+    });
+});

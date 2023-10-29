@@ -50,4 +50,5 @@ class CarrosselSocialMedia {
 }
 
 const socialMedia = new CarrosselSocialMedia(socialMediaContainer, socialMediaItems, socialMediaControlsContainer)
+
 socialMedia.userControlesSocialMedia()

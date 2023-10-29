@@ -23,7 +23,7 @@ class CarrosselEdiVideo {
     }
 
     setDirecaoEditVideos(direction) {
-        if (direction.className == `ediVideo-previous`) {
+        if (direction.className == `edi-video-previous`) {
             this.carouselArray.unshift(this.carouselArray.pop())
         } else {
             this.carouselArray.push(this.carouselArray.shift())
@@ -33,7 +33,7 @@ class CarrosselEdiVideo {
 
     setControlesEditVideos() {
         this.carouselControls.forEach(control => {
-            document.querySelector(`.ediVideo-${control}`).innerHTML = control
+            document.querySelector(`.edi-video-${control}`).innerHTML = control
         })
     }
 

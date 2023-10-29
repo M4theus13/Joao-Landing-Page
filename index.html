@@ -85,62 +85,17 @@
     <section id="portifolio" class="section">
 
       <div class="box-carrossel">
-<!-- 
-        <div class="carrossel-controls">
-          <button class="carrossel-previous">Landing Page</button>
-          <div class="box-carrossel-name">
-            <p class="carrossel-name">Edição de video</p>
-          </div>
-          <button class="carrossel-next">Edição de Video</button>
-        </div> -->
 
-        <!-- <div class="controles-slide">
-          <button>Edição de Video</button>
-          <button>Social Media</button>
-          <button>Indentidade Visual</button>
-          <button>Landing Page</button>
-        </div> -->
-
-        <div>
-          <input type="radio" name="radio-btn" id="radio1">
-          <input type="radio" name="radio-btn" id="radio2">
-          <input type="radio" name="radio-btn" id="radio3">
-          <input type="radio" name="radio-btn" id="radio4">
+        <div class="controles-slide">
+          <button onclick="ediVideoChecked()" class="button button-active" id="ediVideoButton">Edição de Video</button>
+          <button onclick="socialMediaChecked()" class="button" id="socialMediaButton">Social Media</button>
+          <button onclick="landingPageChecked()" class="button" id="landingPageButton">Landing Page</button>
+          <button onclick="indVisualChecked()" class="button" id="indVisualButton">Indentidade Visual</button>
         </div>
-        <div class="navigation-auto">
-          <div class="auto-btn1"></div>
-          <div class="auto-btn2"></div>
-          <div class="auto-btn3"></div>
-          <div class="auto-btn4"></div>
-      </div>
-        <div class="manual-navigation">
-          <label for="radio1" class="manual-btn">a</label>
-          <label for="radio2" class="manual-btn">b</label>
-          <label for="radio3" class="manual-btn">c</label>
-          <label for="radio4" class="manual-btn">d</label>
-      </div>
 
         <div class="carrosseis">
 
-          <div class="box-carrossel-pages bloco carrossel-1">
-
-            <div class="carrossel-pages">
-              <img class="img-carrossel-pages pages-item-1" src="./assets/landingPage/img2.jpg" alt="img2">
-              <img class="img-carrossel-pages pages-item-2" src="./assets/landingPage/img1.jpg" alt="img1">
-            </div>
-
-            <div class="carrosel-controls-pages">
-              <button class="pages-previous">
-                <img class="seta-img" src="./assets/setas/esquerdo.png" alt="">
-              </button>
-              <button class="pages-next">
-                <img class="seta-img" src="./assets/setas/direito.png" alt="">
-              </button>
-            </div>
-
-          </div>
-
-          <div class="box-carrossel-ediVideo bloco carrossel-2">
+          <div class="box-carrossel-ediVideo bloco carrossel-1">
 
             <div class="carrossel-ediVideo">
               <video controls class="vid-carrossel-ediVideo ediVideo-item-1" src="./assets/editVideos/vid1.mp4"></video>
@@ -150,21 +105,9 @@
                 poster="./assets/editVideos/tumbVid3.png"></video>
             </div>
 
-            <div class="carrosel-controls-ediVideo">
-              <button class="ediVideo-previous">
-                <img class="seta-img" src="./assets/setas/esquerdo.png" alt="">
-
-              </button>
-              <button class="ediVideo-next">
-                <img class="seta-img" src="./assets/setas/direito.png" alt="">
-
-              </button>
-            </div>
-
           </div>
 
-
-          <div class="box-carrossel-social-media bloco carrossel-3">
+          <div class="box-carrossel-social-media bloco carrossel-2">
 
             <div class="carrossel-social-media">
               <img class="img-carrossel-social-media social-media-item-1" src="./assets/socialMedia/img1.jpg"
@@ -177,15 +120,13 @@
                 alt="img4">
             </div>
 
-            <div class="carrosel-controls-social-media">
-              <button class="social-media-previous">
-                <img class="seta-img" src="./assets/setas/esquerdo.png" alt="">
+          </div>
 
-              </button>
-              <button class="social-media-next">
-                <img class="seta-img" src="./assets/setas/direito.png" alt="">
+          <div class="box-carrossel-pages bloco carrossel-3">
 
-              </button>
+            <div class="carrossel-pages">
+              <img class="img-carrossel-pages pages-item-1" src="./assets/landingPage/img2.jpg" alt="img2">
+              <img class="img-carrossel-pages pages-item-2" src="./assets/landingPage/img1.jpg" alt="img1">
             </div>
 
           </div>
@@ -198,20 +139,55 @@
               <img class="img-carrossel item-3" src="./assets/identidadeVisual/img3.jpg" alt="img3">
             </div>
 
-            <div class="carrosel-controls-identidade-visual">
-              <button class="indVisual-previous">
-                <img class="seta-img" src="./assets/setas/esquerdo.png" alt="">
-
-              </button>
-              <button class="indVisual-next">
-                <img class="seta-img" src="./assets/setas/direito.png" alt="">
-
-              </button>
-            </div>
-
           </div>
 
+          <div class="carrosel-controls-ediVideo carrosel-controls-social-media carrosel-controls-pages carrosel-controls-identidade-visual" id="box-button-carrossel">
+            <button class="edi-video-previous social-media-previous pages-previous indVisual-previous" id="button-carrossel-previous">
+              <img class="seta-img" src="./assets/setas/arrow.svg" alt="">
+            </button>
+            <button class="edi-video-next social-media-next pages-next indVisual-next" id="button-carrossel-next">
+              <img class="seta-img" style="rotate: 180deg;" src="./assets/setas/arrow.svg" alt="">
+            </button>
+          </div>
+
+          <!-- <div class="carrosel-controls-identidade-visual button-invisible ">
+            <button class="indVisual-previous">
+              <img class="seta-img" src="./assets/setas/arrow.svg" alt="">
+            </button>
+            <button class="indVisual-next">
+              <img class="seta-img" src="./assets/setas/arrow.svg" alt="">
+            </button>
+          </div>
+
+          <div class="carrosel-controls-pages button-invisible ">
+            <button class="pages-previous">
+              <img class="seta-img" src="./assets/setas/arrow.svg" alt="">
+            </button>
+            <button class="pages-next">
+              <img class="seta-img" src="./assets/setas/arrow.svg" alt="">
+            </button>
+          </div>
+
+          <div class="carrosel-controls-social-media button-invisible ">
+            <button class="social-media-previous">
+              <img class="seta-img" src="./assets/setas/arrow.svg" alt="">
+            </button>
+            <button class="social-media-next">
+              <img class="seta-img" src="./assets/setas/arrow.svg" alt="">
+            </button>
+          </div>
+
+          <div class="carrosel-controls-ediVideo button-invisible ">
+            <button class="edi-video-previous">
+              <img class="seta-img" src="./assets/setas/arrow.svg" alt="">
+            </button>
+            <button class="edi-video-next">
+              <img class="seta-img" src="./assets/setas/arrow.svg" alt="">
+            </button>
+          </div> -->
+
         </div>
+
 
       </div>
     </section>
@@ -315,10 +291,10 @@
 
 </body>
 <script src="./js/script.js"></script>
-<script src="./js/carrossel.js"></script>
 <script src="./js/carrosselIndVisual.js"></script>
 <script src="./js/carrosselSocialMedia.js"></script>
 <script src="./js/carroselEdiVideo.js"></script>
 <script src="./js/carrosselPages.js"></script>
+<script src="./js/carrossel.js"></script>
 
 </html>

@@ -49,4 +49,5 @@ class CarrosselIndVisual {
 }
 
 const indVisual = new CarrosselIndVisual(indVisualContainer, indVisualItems, indVisualControlsContainer)
+
 indVisual.useControlsIndVisual()
