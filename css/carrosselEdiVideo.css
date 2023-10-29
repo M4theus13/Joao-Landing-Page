@@ -57,6 +57,10 @@
     .ediVideo-item-1, .ediVideo-item-3 {
         height: 60%;
     }
+
+    .carrossel-ediVideo {
+        height: 500px;
+    }
 }
 
 @media (max-width:600px) {

@@ -81,8 +81,8 @@
   }
 
   .box-sobre-img img {
-    width: 650px;
-  }
+    width: 450px;
+}
 
   .box-sobre-img {
     left: 70%;
@@ -90,6 +90,10 @@
 
   .button-sobre {
     margin-top: 70px;
+  }
+  
+  .box-sobre-text p {
+    font-size: 19px;
   }
 }
 
@@ -148,7 +152,7 @@
   }
 
   .box-sobre-img {
-    top: 0;
+    display: none;
   }
 
   .box-sobre-text h3 span {

@@ -9,6 +9,7 @@
 }
 html {
     scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
 
 ::-webkit-scrollbar {
@@ -45,6 +46,9 @@ a {
     height: 100vh;
 }
 
+#portfolio, #servicos, #sobre, .bar-social-media, .footer {
+    scroll-snap-align: start;
+}
 
 /*header*/
 
@@ -316,6 +320,12 @@ a {
 }
 /*footer*/
 
+@media (max-width:1500px) {
+    .box-img-perfil img {
+        width: 600px;
+    }
+}
+
 @media (max-width:1300px) {
     .box-text-header {
         margin: 0;
@@ -422,29 +432,6 @@ a {
     }
 }
 
-@media (max-width:425px) {
-    .logo-ja {
-        width: 30px;
-    }
-
-    .icon {
-        width: 15px;
-    }
-
-    .bar-social-media {
-        gap: 5px;
-    }
-
-    .box-img-perfil {
-        top: 32%;
-        left: -10%;
-    }
-    
-    .box-img-perfil img {
-        width: 400px;
-    }
-}
-
 @media (max-width:480px) {
 
 
@@ -494,5 +481,34 @@ a {
     .footer p {
         font-size: 12px;
         margin: 10px 0;
+    }
+}
+
+@media (max-width:425px) {
+    .logo-ja {
+        width: 30px;
+    }
+
+    .icon {
+        width: 15px;
+    }
+
+    .bar-social-media {
+        gap: 15px;
+    }
+
+    .box-img-perfil {
+        top: 18%;
+        left: 37%;
+    }
+    
+    .box-img-perfil img {
+        width: 400px;
+    }
+}
+
+@media (max-width:375px) {
+    .bar-social-media {
+        gap: 5px;
     }
 }

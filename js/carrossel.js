@@ -5,6 +5,8 @@ const socialMediaCarrossel = document.querySelector('.carrossel-2')
 const landingPageCarrossel = document.querySelector('.carrossel-3')
 const indVisualCarrossel = document.querySelector('.carrossel-4')
 
+const videoPause = document.querySelectorAll('.vid-carrossel-ediVideo')
+
 const boxButton = document.getElementById('box-button-carrossel')
 const buttonAnterior = document.getElementById('button-carrossel-previous')
 const buttonNext = document.getElementById('button-carrossel-next')
@@ -54,6 +56,10 @@ function socialMediaChecked() {
     boxButton.setAttribute('class','carrosel-controls-social-media')
     buttonAnterior.setAttribute('class','social-media-previous')
     buttonNext.setAttribute('class','social-media-next')
+
+    videoPause.forEach(el => {
+        el.pause()
+    })
 }
 
 function landingPageChecked() {
@@ -76,6 +82,10 @@ function landingPageChecked() {
     boxButton.classList.add('carrosel-controls-pages')
     buttonAnterior.classList.add('pages-previous')
     buttonNext.classList.add('pages-next')
+
+    videoPause.forEach(el => {
+        el.pause()
+    })
 }
 
 function indVisualChecked() {
@@ -98,6 +108,10 @@ function indVisualChecked() {
     boxButton.classList.add('carrosel-controls-identidade-visual')
     buttonAnterior.classList.add('indVisual-previous')
     buttonNext.classList.add('indVisual-next')
+
+    videoPause.forEach(el => {
+        el.pause()
+    })
 }
 
 document.addEventListener('DOMContentLoaded', function() {

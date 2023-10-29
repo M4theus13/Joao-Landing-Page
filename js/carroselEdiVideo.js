@@ -42,6 +42,9 @@ class CarrosselEdiVideo {
         triggers.forEach(control => {
             control.addEventListener('click', e => {
                 e.preventDefault()
+                this.carouselArray.forEach(el => {
+                    el.pause()
+                })
                 this.setDirecaoEditVideos(control)
             })
         })
