@@ -71,3 +71,18 @@
         width: 300px;
     }
 }
+
+@media (max-width:600px) {
+    .social-media-item-1, .social-media-item-3 {
+        width: 210px;
+    }
+
+    .social-media-item-4 {
+        width: 150px;
+    }
+
+    .social-media-item-2 {
+        width: 240px;
+    }
+}
+

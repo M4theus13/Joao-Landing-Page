@@ -48,3 +48,23 @@
     left: 100%;
     transform: translateX(-50%);
 }
+
+@media (max-width:1500px) {
+    .ediVideo-item-2 {
+        height: 80%;
+    }
+
+    .ediVideo-item-1, .ediVideo-item-3 {
+        height: 60%;
+    }
+}
+
+@media (max-width:600px) {
+    .ediVideo-item-1, .ediVideo-item-3 {
+        height: 50%;
+    }
+
+    .ediVideo-item-2 {
+        height: 60%;
+    }
+}

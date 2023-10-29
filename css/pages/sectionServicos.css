@@ -152,9 +152,6 @@
     .servicos-edicao-video-header h4, .servicos-landing-page-header h4 {
         font-size: 30px;
     }
-}
-
-@media (max-width:768px) {
 
     .box-cards-servicos {
         gap: 10px;
@@ -190,4 +187,86 @@
         margin: 4px 0;
     }
     
+}
+
+@media (max-width:600px) {
+
+    .box-cards-servicos {
+        flex-wrap: wrap;
+    }
+
+    .card-servicos {
+        width: 200px;
+        height: 320px;
+    }
+
+    .card-servicos-text {
+        font-size: 14px;
+    }
+
+    .servicos-social-media-header h4 {
+        font-size: 17px;
+    }
+
+    #logo-servicos {
+        height: 50px;
+    }
+
+    .box-servicos-text h3 {
+        font-size: 31px;
+        padding-left: 10px;
+    }
+
+    .box-servicos-text {
+        gap: 10px;
+    }
+}
+
+@media (max-width:425px) {
+
+    #servicos {
+        gap: 0;
+    }
+
+    .card-servicos {
+        width: 140px;
+        height: 260px;
+    }
+
+    .card-servicos-text {
+        font-size: 13px;
+    }
+
+    .servicos-social-media-header img, .servicos-landing-page-header img, .servicos-edicao-video-header img {
+        width: 30px;
+    }
+
+    .servicos-social-media-header h4 {
+        font-size: 13px;
+    }
+
+    .servicos-social-media-header > div > span {
+        font-size: 10px;
+    }
+
+    .servicos-edicao-video-header h4, .servicos-landing-page-header h4 {
+        font-size: 15px;
+        margin: 4px 0;
+    }
+
+    .servicos-social-media, .servicos-landing-page, .servicos-edicao-video {
+        gap: 5px;
+    }
+
+    .servicos-social-media-text {
+        gap: 5px;
+    }
+
+    .servicos-social-media-text span {
+        font-size: 12px;
+    }
+
+    .card-servicos:hover {
+        transform: scale(1);
+    }
 }

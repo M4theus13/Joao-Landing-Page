@@ -59,3 +59,17 @@
         width: 300px;
     }
 }
+
+@media (max-width:600px) {
+    .pages-item-1, .pages-item-3 {
+        width: 210px;
+    }
+
+    .pages-item-4 {
+        width: 150px;
+    }
+
+    .pages-item-2 {
+        width: 240px;
+    }
+}
