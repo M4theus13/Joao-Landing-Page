@@ -15,9 +15,11 @@ class CarrosselEdiVideo {
             el.classList.remove('ediVideo-item-1')
             el.classList.remove('ediVideo-item-2')
             el.classList.remove('ediVideo-item-3')
+            el.classList.remove('ediVideo-item-4')
+            el.classList.remove('ediVideo-item-5')
         })
         
-        this.carouselArray.slice(0, 3).forEach((el, i) => {
+        this.carouselArray.slice(0, 5).forEach((el, i) => {
             el.classList.add(`ediVideo-item-${i+1}`)
         })
     }
