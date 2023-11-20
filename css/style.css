@@ -466,6 +466,10 @@ a {
         display: flex;
     }
 
+    .bar-social-media {
+        justify-content: space-evenly;
+    }
+
 
 }
 
