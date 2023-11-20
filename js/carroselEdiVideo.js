@@ -3,6 +3,27 @@ const ediVideoControlsContainer = document.querySelector('.carrosel-controls-edi
 const ediVideoControl = ['previous', 'next']
 const ediVideoItems = document.querySelectorAll('.vid-carrossel-ediVideo')
 
+
+
+function playVideo() {
+    const vid2 = document.querySelector('.ediVideo-item-2')
+
+    ediVideoItems.forEach(e => {
+        console.log(e)
+        if (e.classList[1] === 'ediVideo-item-2') {
+            e.addEventListener('click', ()=> {
+                if (e.paused) {
+                    e.play();
+                } else {
+                    e.pause();
+                }
+            })
+        }
+    })
+}
+playVideo()
+
+
 class CarrosselEdiVideo {
     constructor(container, items, controls) {
         this.carrouselContainer = container
@@ -22,6 +43,7 @@ class CarrosselEdiVideo {
         this.carouselArray.slice(0, 5).forEach((el, i) => {
             el.classList.add(`ediVideo-item-${i+1}`)
         })
+        playVideo()
     }
 
     setDirecaoEditVideos(direction) {

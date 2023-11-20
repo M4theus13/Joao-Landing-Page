@@ -14,18 +14,18 @@ const buttonNext = document.getElementById('button-carrossel-next')
 
 const videosConjunto= document.querySelectorAll('.vid-carrossel-ediVideo')
 
-function attControlsPlayer() {
-    videosConjunto.forEach(el => {
-        el.removeAttribute('controls')
-        if (el.classList.contains('ediVideo-item-2')) {
-            el.setAttribute('controls', true)
-        }
-    })
-}
-attControlsPlayer()
+// function attControlsPlayer() {
+//     videosConjunto.forEach(el => {
+//         el.removeAttribute('controls')
+//         if (el.classList.contains('ediVideo-item-2')) {
+//             el.setAttribute('controls', true)
+//         }
+//     })
+// }
+// attControlsPlayer()
 
-buttonAnterior.addEventListener('click', attControlsPlayer)
-buttonNext.addEventListener('click', attControlsPlayer)
+// buttonAnterior.addEventListener('click', attControlsPlayer)
+// buttonNext.addEventListener('click', attControlsPlayer)
 
 ediVideoChecked()
 
