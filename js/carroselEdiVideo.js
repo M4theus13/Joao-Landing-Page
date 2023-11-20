@@ -6,10 +6,7 @@ const ediVideoItems = document.querySelectorAll('.vid-carrossel-ediVideo')
 
 
 function playVideo() {
-    const vid2 = document.querySelector('.ediVideo-item-2')
-
     ediVideoItems.forEach(e => {
-        console.log(e)
         if (e.classList[1] === 'ediVideo-item-2') {
             e.addEventListener('click', ()=> {
                 if (e.paused) {

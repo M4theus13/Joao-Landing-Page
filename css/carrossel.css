@@ -198,6 +198,7 @@
 @media (max-width:425px) {
     .controles-slide button {
         font-size: 13px;
+        font-weight: 900;
     }
 
     .seta-img {

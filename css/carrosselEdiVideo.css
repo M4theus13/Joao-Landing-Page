@@ -20,7 +20,7 @@
     background-size: contain;
 }
 
-.ediVideo-item-1, .ediVideo-item-2, .ediVideo-item-3 {
+.ediVideo-item-1, .ediVideo-item-2, .ediVideo-item-3, .ediVideo-item-4, .ediVideo-item-5 {
     transition: .4s;
 }
 
@@ -28,6 +28,11 @@
     height: 60%;
     opacity: .8;
     filter: blur(2px) brightness(0.6);
+}
+
+.ediVideo-item-4, .ediVideo-item-5 {
+    height: 30%;
+    opacity: 0;
 }
 
 .ediVideo-item-1 {
@@ -46,6 +51,16 @@
 
 .ediVideo-item-3 {
     left: 100%;
+    transform: translateX(-50%);
+}
+
+.ediVideo-item-4 {
+    left: 20%;
+    transform: translateX(-50%);
+}
+
+.ediVideo-item-5 {
+    left: 80%;
     transform: translateX(-50%);
 }
 

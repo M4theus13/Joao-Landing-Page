@@ -35,7 +35,7 @@
   max-width: 400px;
   font-size: 22px;
   font-weight: 300;
-  text-align: start;
+  text-align: start;  
 }
 
 .box-sobre-img {
@@ -115,6 +115,10 @@
     
     .box-sobre-img img {
       width: 450px;
+    }
+
+    .box-sobre-text p {
+      font-weight: 900;
     }
 }
 

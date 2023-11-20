@@ -110,6 +110,7 @@
 
 .servicos-social-media-text span {
     color: #939393;
+    font-weight: 900;
 }
 
 .servicos-landing-page-header {
@@ -264,6 +265,7 @@
 
     .card-servicos-text {
         font-size: 13px;
+        font-weight: 900;
     }
 
     .servicos-social-media-header img, .servicos-landing-page-header img, .servicos-edicao-video-header img {
