@@ -6,26 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Joaoz</title>
   <link rel="stylesheet" href="./css/style.css">
-
-  <link rel="stylesheet" href="./css/carrosselIndVisual.css">
-  <link rel="stylesheet" href="./css/carrosselSocialMedia.css">
-  <link rel="stylesheet" href="./css/carrosselEdiVideo.css">
-  <link rel="stylesheet" href="./css/carrosselPages.css">
-  <link rel="stylesheet" href="./css/carrossel.css">
-
-  <link rel="stylesheet" href="./css/pages/sectionServicos.css">
-  <link rel="stylesheet" href="./css/pages/sectionSobre.css">
-
   <link href="https://fonts.cdnfonts.com/css/gotham-6" rel="stylesheet">
-  <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
   <meta name="description" content="Designer, Social Media, Editor de vídeos e outros">
 
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Joaoz">
   <meta property="og:description" content="Designer, Social Media, Editor de vídeos e outros">
-  <meta property="og:image" content="https://joaozdesign.com.br/assets/profile.png">
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
   <meta property="og:locale" content="pt_BR" />
   <meta property="og:url" content="joaozdesign.com.br">
   <meta property="og:site_name" content="Joaoz" />
@@ -33,246 +20,50 @@
 
 <body>
   <header class="bar-social-media">
-    <a href="">
-      <img src="./assets/logo.svg" alt="logo JA" class="logo-ja">
-    </a>
-    <div class="box-text-header">
-      <a href="#portfolio">
-        <p>Portfólio</p>
-      </a>
-      <a href="#servicos">
-        <p>Serviços</p>
-      </a>
-      <a href="#sobre">
-        <p>Sobre Mim</p>
-      </a>
-    </div>
-    <a href="https://www.linkedin.com/in/azvdj/" target="_blank">
-      <img src="./assets/linkedin.svg" alt="linkedin-icon" class="icon">
-    </a>
-    <a href="https://www.instagram.com/joaoz.design/" target="_blank">
-      <img src="./assets/instagram.svg" alt="instagram-icon" class="icon">
-    </a>
-    <a href="https://www.tiktok.com/@joaoz.design" target="_blank">
-      <img src="./assets/tiktok.svg" alt="tiktok-icon" class="icon">
-    </a>
-  </header>
-  <main>
-    <section id="section-first" class="section">
-
-      <div class="container">
-        <div class="box-text">
-          <p><span>João Azevedo</span> | Criatividade e Estratégia!</p>
-          <div class="titles">
-            <h1 id="title-one">Meu trabalho</h1>
-            <h1 id="title-two">destaca seu perfil!</h1>
-          </div>
-          <ul class="list">
-            <li>Criativos para social media</li>
-            <li>Landing Pages</li>
-            <li>Criativos para lançamentos</li>
-            <li>Edição de Vídeos</li>
-          </ul>
-          <div class="box-button">
-            <button id="button-request" onclick="redirect()">Solicite um orçamento</button>
-          </div>
-          <div class="box-buttons-header-mobile">
-            <a href="#portfolio">Portfólio</a>
-            <a href="#servicos">Serviços</a>
-          </div>
-        </div>
-        <div class="box-img-perfil">
-          <img src="./assets/perfil.png" alt="">
-        </div>
-    </section>
-
-    <section id="portfolio" class="section">
-
-      <div class="box-carrossel">
-
-        <div class="controles-slide">
-          <button onclick="ediVideoChecked()" class="button button-active" id="ediVideoButton">Edição de Video</button>
-          <button onclick="socialMediaChecked()" class="button" id="socialMediaButton">Social Media</button>
-          <button onclick="landingPageChecked()" class="button" id="landingPageButton">Landing Page</button>
-          <button onclick="indVisualChecked()" class="button" id="indVisualButton">Identidade Visual</button>
-        </div>
-
-        <div class="carrosseis">
-
-          <div class="box-carrossel-ediVideo bloco carrossel-1">
-
-            <div class="carrossel-ediVideo">
-              <video class="vid-carrossel-ediVideo ediVideo-item-1" src="./assets/editVideos/video1.mp4" poster="./assets/editVideos/tumb1.png">
-              </video>
-              <video class="vid-carrossel-ediVideo ediVideo-item-2" src="./assets/editVideos/video2.mp4"
-                poster="./assets/editVideos/tumb2.png"></video>
-              <video class="vid-carrossel-ediVideo ediVideo-item-3" src="./assets/editVideos/video3.mp4"
-                poster="./assets/editVideos/tumb3.png"></video>
-              <video class="vid-carrossel-ediVideo ediVideo-item-4" src="./assets/editVideos/video4.mp4"
-                poster="./assets/editVideos/tumb4.png"></video>
-              <video class="vid-carrossel-ediVideo ediVideo-item-5" src="./assets/editVideos/video5.mp4"
-                poster="./assets/editVideos/tumb5.png"></video>
-
-            </div>
-
-          </div>
-
-          <div class="box-carrossel-social-media bloco carrossel-2">
-
-            <div class="carrossel-social-media">
-              <img class="img-carrossel-social-media social-media-item-1" src="./assets/socialMedia/img1.jpg"
-                alt="img2">
-              <img class="img-carrossel-social-media social-media-item-2" src="./assets/socialMedia/img2.jpg"
-                alt="img1">
-              <img class="img-carrossel-social-media social-media-item-3" src="./assets/socialMedia/img3.jpg"
-                alt="img3">
-              <img class="img-carrossel-social-media social-media-item-4" src="./assets/socialMedia/img4.jpg"
-                alt="img4">
-            </div>
-
-          </div>
-
-          <div class="box-carrossel-pages bloco carrossel-3">
-
-            <div class="carrossel-pages">
-              <img class="img-carrossel-pages pages-item-1" src="./assets/landingPage/img2.jpg" alt="img2">
-              <img class="img-carrossel-pages pages-item-2" src="./assets/landingPage/img1.jpg" alt="img1">
-            </div>
-
-          </div>
-
-          <div class="box-carrossel-identidade-visual bloco carrossel-4">
-
-            <div class="carrossel-identidade-visual">
-              <img class="img-carrossel item-1" src="./assets/identidadeVisual/img2.jpg" alt="img2">
-              <img class="img-carrossel item-2" src="./assets/identidadeVisual/img1.jpg" alt="img1">
-              <img class="img-carrossel item-3" src="./assets/identidadeVisual/img3.jpg" alt="img3">
-            </div>
-
-          </div>
-
-          <div
-            class="carrosel-controls-ediVideo carrosel-controls-social-media carrosel-controls-pages carrosel-controls-identidade-visual"
-            id="box-button-carrossel">
-            <button class="edi-video-previous social-media-previous pages-previous indVisual-previous"
-              id="button-carrossel-previous">
-              <img class="seta-img" src="./assets/setas/arrow.svg" alt="">
-            </button>
-            <button class="edi-video-next social-media-next pages-next indVisual-next" id="button-carrossel-next">
-              <img class="seta-img" style="rotate: 180deg;" src="./assets/setas/arrow.svg" alt="">
-            </button>
-          </div>
-
-        </div>
-
-        <img src="./assets/logo.svg" alt="" class="logo-ja">
-
-      </div>
-    </section>
-
-    <section id="servicos" class="section">
-      <div class="box-servicos-text">
-        <img src="./assets/logo.svg" id="logo-servicos" alt="">
-        <h3>Meus <span>Serviços</span></h3>
-      </div>
-      <div class="box-cards-servicos">
-        <div class="card-servicos servicos-social-media">
-          <div class="servicos-social-media-header">
-            <img src="./assets/card/arroba.svg" alt="">
-            <div>
-              <h4>Social Media</h4>
-              <span>(ou anúncios)</span>
-            </div>
-          </div>
-          <div class="card-servicos-border"></div>
-          <div class="servicos-social-media-text">
-            <div>
-              <span>Opção 1:</span>
-              <p class="card-servicos-text">Criativos para utilizar no Instagram, Facebook e etc.</p>
-            </div>
-            <div>
-              <span>Opção 2:</span>
-              <p class="card-servicos-text">Criativos para utilizar em campanhas de tráfego pago (anúncios)</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="card-servicos servicos-landing-page">
-          <div class="servicos-landing-page-header">
-            <img src="./assets/card/landing-page.svg" alt="">
-            <h4>Landing Page</h4>
-          </div>
-          <div class="card-servicos-border"></div>
-          <div class="servicos-landing-page-text">
-            <p class="card-servicos-text">
-              Criação de uma Landing Page (ou página de captura) completa do zero, Design e funcionalidades, totalmente
-              responsiva para aparelhos móveis.
-            </p>
-          </div>
-        </div>
-        <div class="card-servicos servicos-edicao-video">
-          <div class="servicos-edicao-video-header">
-            <img src="./assets/card/camera.svg" alt="">
-            <h4>Edição de Vídeo</h4>
-          </div>
-          <div class="card-servicos-border"></div>
-          <div class="servicos-landing-page-text">
-            <p class="card-servicos-text">
-              Edição completa do seu vídeo para qualquer nicho e formato. Reels, Tiktok, Youtube ou Institucionais.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="sobre" class="section">
-      <div class="box-section-sobre">
-        <div class="box-sobre-text">
-          <h3>Conheça o <span>João Azevedo</span></h3>
-          <p>
-            Me chamo João Azevedo e tenho 21 anos. Sou um profissional apaixonado pelo mundo do design gráfico e edição
-            de vídeo. Desde os meus 14 anos, comecei a explorar as possibilidades do Photoshop, desenvolvendo
-            habilidades
-            essenciais para minha carreira.
-          </p>
-          <p>
-            Meu foco está direcionado em criar conteúdos criativos que convertem seguidores em clientes, mantendo sempre
-            qualidade e trazendo uma abordagem autêntica e genuína ao meu trabalho.
-          </p>
-        </div>
-        <div class="box-sobre-img">
-          <img src="./assets/perfil2.png" alt="">
-        </div>
-      </div>
-      <div class="box-sobre-button">
-        <button class="button-sobre" onclick="redirect()">Solicite um orçamento</button>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div></div>
-    <p>Joaoz.design | Todos os direitos reservados.</p>
-    <div>
+    <img src="./assets/logo.svg" alt="logo-ja" id="logo-ja">
+    <div class="box-links-header">
+      <p>Me siga nas <span>redes sociais:</span></p>
       <a href="https://www.linkedin.com/in/azvdj/" target="_blank">
-        <img src="./assets/linkedin.svg" alt="linkedin-icon" class="icon">
-      </a>
-      <a href="https://www.instagram.com/joaoz.design/" target="_blank">
-        <img src="./assets/instagram.svg" alt="instagram-icon" class="icon">
+        <img src="./assets/linkedin-icon.svg" alt="linkedin-icon" class="icon">
       </a>
       <a href="https://www.tiktok.com/@joaoz.design" target="_blank">
-        <img src="./assets/tiktok.svg" alt="tiktok-icon" class="icon">
+        <img src="./assets/tiktok-icon.svg" alt="tiktok-icon" class="icon">
       </a>
     </div>
+  </header>
+  <main>
+
+    <div class="container">
+      <div class="box-text">
+        <p><span>João Azevedo</span> | Criatividade e Estratégia!</p>
+        <div class="titles">
+          <h1 id="title-one">Meu trabalho</h1>
+          <h1 id="title-two">destaca seu negócio!</h1>
+        </div>
+        <ul class="list">
+          <li>Criativos para social media</li>
+          <li>Landing Pages</li>
+          <li>Criativos para lançamentos</li>
+          <li>Edição de Vídeos</li>
+        </ul>
+        <div class="box-button">
+            <button id="button-request" onclick="redirect()" >Solicite um orçamento</button>
+        </div>
+      </div>
+
+      <div class="box-links">
+        <a href="https://www.behance.net/joaoazevedodesign" target="_blank">
+          <img src="./assets/card-um.jpg" alt="card-um" class="card">
+        </a>
+        <a href="https://www.instagram.com/joaoz.design/" target="_blank">
+          <img src="./assets/card-dois.jpg" alt="card-dois" class="card">
+        </a>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>&copy; Copyright <span class="year">2023</span> Joaoz.design. Todos os direitos reservados.</p>
   </footer>
-
-
 </body>
 <script src="./js/script.js"></script>
-<script src="./js/carrosselIndVisual.js"></script>
-<script src="./js/carrosselSocialMedia.js"></script>
-<script src="./js/carroselEdiVideo.js"></script>
-<script src="./js/carrosselPages.js"></script>
-<script src="./js/carrossel.js"></script>
-
 </html>
