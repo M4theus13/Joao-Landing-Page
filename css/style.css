@@ -41,6 +41,13 @@ a {
 
 
 /*header*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 1066px;
+}
+
 .bar-social-media {
     width: 100%;
     display: flex;
@@ -288,6 +295,11 @@ a {
 /*footer*/
 
 @media (max-width:1024px) {
+
+    nav {
+        width: 836px;
+    }
+
     .container {
         gap: 20px;
     }
@@ -300,6 +312,10 @@ a {
 @media (max-width:768px) {
     body {
         height: calc(100vh + 60px);
+    }
+
+    nav {
+        width: 566px;
     }
 
     .container {
@@ -362,6 +378,10 @@ a {
 }
 
 @media (max-width:480px) {
+
+    nav {
+        width: 285px;
+    }
 
     body {
         background-size: auto;
